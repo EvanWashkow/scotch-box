@@ -17,6 +17,7 @@ Vagrant.configure("2") do |config|
         :owner         => "www-data",
         :group         => "www-data",
         :mount_options => ["dmode=777", "fmode=777"]
+    config.vm.provision "shell", path: "provision.sh"
 
     # Optional NFS. Make sure to remove other synced_folder line too
     #config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
