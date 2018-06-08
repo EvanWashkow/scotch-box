@@ -1,0 +1,3 @@
+[submodule "php-installers"]
+	path = php-installers
+	url = https://github.com/EvanWashkow/debian-php-installers
